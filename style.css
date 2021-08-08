@@ -1,0 +1,155 @@
+*{
+    padding: 0px;
+    margin: 0;
+}
+body{
+    background-color: lightgray;
+}
+#navbar1{
+    color: whitesmoke;
+    background-color: black;
+    font-size: 25px;
+    position: relative;
+    width: 100%;
+}
+#navbar{
+    display: flex;
+    font-size: 15px;
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+}
+#navbar::before{
+    content: " ";
+    width: 100%;
+    z-index: -1;
+    opacity:0.9 ;
+}
+#navbar ul{
+    display: flex;
+    filter: drop-shadow(2px 4px 6px black);
+    
+}
+#navbar ul li{
+    color: whitesmoke;
+    list-style: none;
+    font-size: 1.5em;
+}
+#navbar ul li a{
+    display:block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: whitesmoke;
+    text-decoration: none;   
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: whitesmoke;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    background: url('../pizza.jpg') no-repeat center center/cover;
+    height: 500px;
+}
+#home::before{
+    content: " ";
+    background-color: black;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+.services-container{
+    padding-top: 14px;
+}
+#services{
+    margin: 10px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    height: 260px;
+    width: 100%;
+    padding: 10px;
+    margin: 3px 3px;
+    border-radius: 25px;
+    background-color: white;
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+.hprimary{
+    font-size: 1.9em;
+    font-family: serif;
+}
+.hsecondary{
+    font-size: 1.5em;
+    padding: 20px;
+    font-family: serif;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: serif;
+    filter: drop-shadow(2px 4px 6px black);
+    padding: 20px 100px;
+}
+.btn{
+    border-radius: 12px;
+    width: 12%;
+    font-size: 14px;
+    border-color:black;
+    background-color: black;
+    padding: 2px;
+    border-left: none;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    font-family: serif;
+}
+.center{
+    text-align: center;
+    font-style: normal;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+.contact{
+    position: relative;
+}
+.contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url('../contact2.jpg') no-repeat center center/cover;
+    opacity: 0.4;
+    z-index: -1;
+}
+#contactbox{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+#contactbox textarea,
+#contactbox input{
+    width: 100%;
+    border-radius: 9px;
+    font-size: 0.9em;
+    padding: 3px;
+    background-color: whitesmoke;
+}
+#contactbox form{
+    width: 30%;
+}
+#contactbox label{
+    font-size: 1.3em;
+    font-family: serif;
+}
